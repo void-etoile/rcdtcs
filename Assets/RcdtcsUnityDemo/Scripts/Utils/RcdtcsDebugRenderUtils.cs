@@ -24,7 +24,7 @@ public static partial class RcdtcsUnityUtils{
 		
 		renderMesh.Clear();
 		
-		UnityEngine.Random.seed = c_RandomSeed;
+		UnityEngine.Random.InitState(c_RandomSeed);
 		
 		int npolys = pmesh.npolys;
 		int nvp = pmesh.nvp;
@@ -59,7 +59,7 @@ public static partial class RcdtcsUnityUtils{
 		
 		renderMesh.Clear();
 		
-		UnityEngine.Random.seed = c_RandomSeed;
+		UnityEngine.Random.InitState(c_RandomSeed);
 		
 		int nmeshes = dmesh.nmeshes;
 		for (int i = 0; i < nmeshes; ++i) {
@@ -95,7 +95,7 @@ public static partial class RcdtcsUnityUtils{
 		
 		renderMesh.Clear();
 		
-		UnityEngine.Random.seed = c_RandomSeed;
+		UnityEngine.Random.InitState(c_RandomSeed);
 		
 		float[] orig = cset.bmin;
 		float cs = cset.cs;
@@ -174,7 +174,7 @@ public static partial class RcdtcsUnityUtils{
 	{
 		renderMesh.Clear();
 		
-		UnityEngine.Random.seed = c_RandomSeed;
+		UnityEngine.Random.InitState(c_RandomSeed);
 		
 		float[] orig = cset.bmin;
 		float cs = cset.cs;
@@ -238,7 +238,7 @@ public static partial class RcdtcsUnityUtils{
 		
 		renderMesh.Clear();
 		
-		UnityEngine.Random.seed = c_RandomSeed;
+		UnityEngine.Random.InitState(c_RandomSeed);
 		
 		if (navMesh == null) {
 			renderMesh.Rebuild();
